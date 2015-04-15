@@ -1,0 +1,24 @@
+DROP DATABASE IF EXISTS music;
+
+CREATE DATABASE music;
+
+GRANT ALL PRIVILEGES ON music.* to cs135@localhost IDENTIFIED BY 'grader';
+
+USE music;
+
+CREATE TABLE IF NOT EXISTS registeredUsers (
+	id INT NOT NULL AUTO_INCREMENT,
+	username VARCHAR(256) NOT NULL,
+	password VARCHAR(256) NOT NULL,
+	name VARCHAR(256) NOT NULL,
+	PRIMARY KEY(id)
+)ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS profiles (
+	id INT NOT NULL,
+	about VARCHAR(10000),
+	musicInterest VARCHAR(10000),
+	imgpath VARCHAR(256),
+	PRIMARY KEY (id)
+)ENGINE=InnoDB;
+
