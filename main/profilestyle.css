@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+h2, h3 {
+	font-family:arial black;
+	color:rgba(0,0,0,1.00);	
+}
+
+.profile {
+	width:350px;
+	height:100%;
+	margin-left:100px;
+	overflow:hidden;
+	display:inline-block;
+	text-align:center;
+}
+
+.profileimage {
+	width: 250px;
+	height: 250px;
+	overflow:hidden;
+	margin-top: 200px;
+	margin-left:0px;
+	position:relative;
+	display:inline-block;
+	border-radius:100%;
+	box-shadow:0px 0px 40px rgba(0,0,0,0.67);
+
+}
+
+.profileimage img {
+	position:absolute;
+	left: -100%;
+	right: -100%;
+	top: -100%;
+	bottom: -100%;
+	display:inline-block;
+	margin:auto;
+	height:100%;
+}
+
+.editProfile {
+	font-family:arial black;
+	text-align:center;
+}
+.about, .musicInterest {
+	outline-style:auto;
+	outline-color:rgba(255,255,255,0.80);	
+}

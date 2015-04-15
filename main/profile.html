@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Home</title>
+<!--Adobe Edge Runtime-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.1.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-1638975088 { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('profile', 'EDGE-1638975088', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "100%",
+    height: "100%"
+}, {dom: [ ]}, {dom: [ ]});
+</script>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;height:100%;">
+	<div id="Stage" class="EDGE-1638975088">
+    <form align="right" style="margin-right:35px;margin-top:55px">
+    	<input type="button" value="Login" onClick="overlay(1)">
+        <input type="button" value="Register" onClick="overlay(2)">
+    </form>
+    </div>
+    
+    
+    <!-- Login popup PUT ACTION!!!!!!!!!!!!!!!!-->
+    <div id="overlay_1">
+        <div>
+        <form action="" method="post">
+        	<h3> Please Login! </h3>
+        	<input type="email" name="user" placeholder="Email">
+            <input type="password" name="pw" placeholder="Password">
+            <br>
+            <input type="submit" value="Login"><br>
+            <h6 style="color:#FFFFFF">Not a registered user? <a href="#" onClick="overlay(2);overlay(1)"> Sign-up.</a></h6>
+        </form>
+        </div>
+    </div>
+    <!-- Register popup PUT ACTION!!!!!!!!!!!!-->
+    <div id="overlay_2">
+        <div>
+        <form action="" method="post">
+        	<h3> Please Register! </h3>
+            <input type="text" name="name" placeholder="Full Name">
+            <br>
+        	<input type="email" name="user" placeholder="Email">
+            <br>
+            <input type="password" name="pw" placeholder="Password">
+            <br>
+            <input type="submit" value="Register"><br>
+            <h6 style="color:#FFFFFF">Already a registered user? <a href="#" onClick="overlay(1);overlay(2)"> Login.</a></h6>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
